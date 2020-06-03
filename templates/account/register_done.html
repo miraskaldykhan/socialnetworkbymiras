@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}Welcome{% endblock %}
+{% block content %}
+    <h1>Welcome {{ new_user.firstname }}!</h1>
+    <p>Your account has been successfully created.
+    Now you can <a href="{% url "login" %}">log in</a>.</p>
+    <script>
+       Swal.fire({
+      icon: 'success',
+      title: 'Good job!',
+      text: 'Your account has been successfully created!',
+      footer: '<a href="{% url "login" %}">Go to LOGIN</a>'
+    })
+    </script>
+{% endblock %}
