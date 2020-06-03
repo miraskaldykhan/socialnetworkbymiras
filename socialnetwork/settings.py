@@ -28,7 +28,7 @@ REDIS_HOST = 'localhost'
 REDIS_PORT = 6379
 REDIS_DB = 0
 
-ALLOWED_HOSTS = ['mysite.com', 'localhost', '127.0.0.1', '6c60aab8.ngrok.io']
+ALLOWED_HOSTS = ['*']
 
 ABSOLUTE_URL_OVERRIDES = {
     'auth.user': lambda u: reverse_lazy('user_detail', args=[u.username])
