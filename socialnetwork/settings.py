@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'g#!7)4e77e1*--+3ojg0pel!on+k9erf==_r)0sky81mi&wg3y'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 REDIS_HOST = 'localhost'
 REDIS_PORT = 6379
 REDIS_DB = 0
